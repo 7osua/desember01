@@ -1,0 +1,127 @@
+* {
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	height: 100%;
+	background-image: linear-gradient(to right bottom, #e60000, #0761d1);
+	background-position: center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-color: #111;
+}
+
+body {
+	min-height: 28rem;
+	max-width: 18rem;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	display: flex;
+	flex-flow: column nowrap;
+	background-color: #0000;
+	justify-content: center;
+}
+
+header {
+	background: black;
+	border-radius: 4px;
+	padding: 1rem;
+}
+
+header h1 {
+	font-size: 2rem;
+}
+
+section {
+	background: black;
+
+	padding: 1rem;
+	border-radius: 4px;
+	min-height: 32%;
+	margin-top: 1rem;
+}
+
+section h2 {
+	font-size: 4vw;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+
+#calculator input {
+	appearance: none;
+	font-size: 1.25rem;
+
+	height: 3rem;
+	width: 100%;
+	background: transparent;
+	outline-style: none;
+
+	padding: 1rem;
+	border: 1px solid #333;
+	border-radius: 8px;
+	margin-bottom: 1rem;
+}
+
+#calculator input:focus {
+	border: 1px solid white;
+}
+
+#calculator input::placeholder {
+	color: #444;
+	font-weight: 500;
+}
+
+#calculator div {
+	width: 100%;
+	display: flex;
+	flex-flow: row no-wrap;
+	align-items: center;
+	justify-content: space-around;
+}
+
+#calculator button {
+	width: 2rem;
+	height: 2rem;
+	background-color: white;
+	font-size: 1.25rem;
+	color: black;
+	border: 1px solid #333;
+	border-radius: 8px;
+}
+
+/* #calculator button:hover, */
+#calculator button:active {
+	background-color: transparent;
+	border-color: white;
+	color: white;
+}
+
+#current-calculation {
+	font-size: 2.25rem;
+	font-weight: 500;
+}
+
+#current-calculation + h2 {
+	font-size: 1.25rem;
+	font-weight: 700;
+	background-color: #0761d188;
+	padding: 0.5rem;
+	border-radius: 4px;
+	margin-top: 0.5rem;
+}

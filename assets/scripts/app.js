@@ -81,25 +81,15 @@ function calculateResult(calculationType) {
 	}
 }
 
-function add() {
-	calculateResult("add");
-}
-
-function subtract() {
-	calculateResult("subtract");
-}
-
-function multiply() {
-	calculateResult("multiply");
-}
-
-function divide() {
-	calculateResult("divide");
-}
-
-addButton.addEventListener("click", add);
-subtractButton.addEventListener("click", subtract);
-multiplyButton.addEventListener("click", multiply);
-divideButton.addEventListener("click", divide);
+addButton.addEventListener("click", calculateResult.bind(this, "add"));
+subtractButton.addEventListener(
+	"click",
+	calculateResult.bind(this, "subtract"),
+);
+multiplyButton.addEventListener(
+	"click",
+	calculateResult.bind(this, "multiply"),
+);
+divideButton.addEventListener("click", calculateResult.bind(this, "divide"));
 
 console.log("hello! from app.js");
